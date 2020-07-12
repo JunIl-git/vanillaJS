@@ -1,6 +1,7 @@
 const clockTitle = document.querySelector(".clockTitle");
 const clockTitle2 = document.querySelector(".clockTitle2");
 
+<<<<<<< Updated upstream
 function title(m, date, day) {
   if (day === 0) {
     clockTitle2.innerText = `${m}월 ${date}일 (일)`;
@@ -29,6 +30,15 @@ function getTime() {
   const seconds = today.getSeconds();
   clockTitle.innerText = `${hours < 10 ? `0${hours}` : hours}:${minutes < 10 ? `0${minutes}` : minutes}`;
   title(month, date, day);
+=======
+function getTime() {
+  const today = new Date();
+  const month = today.getDate();
+  const hours = today.getHours();
+  const minutes = today.getMinutes();
+  const seconds = today.getSeconds();
+  clockTitle.innerText = `${hours < 10 ? `0${hours}` : hours}:${minutes < 10 ? `0${minutes}` : minutes} : ${month}`;
+>>>>>>> Stashed changes
 }
 
 function init() {
