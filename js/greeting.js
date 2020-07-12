@@ -8,7 +8,8 @@ function saveLS(text) {
   localStorage.setItem(USER_LS, text);
 }
 
-function handleSubmit() {
+function handleSubmit(event) {
+  event.preventDefault();
   const currentValue = input.value;
   saveLS(currentValue);
   loadGreeting(currentValue);
