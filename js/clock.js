@@ -4,19 +4,19 @@ const clockTitle2 = document.querySelector(".clockTitle2");
 
 function title(m, date, day) {
   if (day === 0) {
-    clockTitle2.innerText = `${m}월 ${date}일 (일)`;
+    clockTitle2.innerText = `${m + 1}월 ${date}일 (일)`;
   } else if (day === 1) {
-    clockTitle2.innerText = `${m}월 ${date}일 (월)`;
+    clockTitle2.innerText = `${m + 1}월 ${date}일 (월)`;
   } else if (day === 2) {
-    clockTitle2.innerText = `${m}월 ${date}일 (화)`;
+    clockTitle2.innerText = `${m + 1}월 ${date}일 (화)`;
   } else if (day === 3) {
-    clockTitle2.innerText = `${m}월 ${date}일 (수)`;
+    clockTitle2.innerText = `${m + 1}월 ${date}일 (수)`;
   } else if (day === 4) {
-    clockTitle2.innerText = `${m}월 ${date}일 (목)`;
+    clockTitle2.innerText = `${m + 1}월 ${date}일 (목)`;
   } else if (day === 5) {
-    clockTitle2.innerText = `${m}월 ${date}일 (금)`;
+    clockTitle2.innerText = `${m + 1}월 ${date}일 (금)`;
   } else if (day === 6) {
-    clockTitle2.innerText = `${m}월 ${date}일 (토)`;
+    clockTitle2.innerText = `${m + 1}월 ${date}일 (토)`;
   }
 }
 
