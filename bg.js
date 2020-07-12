@@ -1,21 +1,21 @@
 const body = document.querySelector("body");
+const bgClass = "bgImage";
 
-function paintImage(imgNumber) {
-  const image = new Image();
-  image.src = `images/${imgNumber + 1}.jpg`;
-  image.classList.add("bgImage");
-  body.appendChild(image);
-
+function randomImage(randomNum) {
+  const bgImage = new Image();
+  body.appendChild(bgImage);
+  bgImage.src = `images/${randomNum}.jpg`;
+  bgImage.classList.add(bgClass);
 }
 
-function genRanDom() {
-  const number = Math.floor(Math.random() * 3);
+function randomNumber() {
+  const number = Math.floor((Math.random() * 7) + 1);
   return number;
 }
 
 function init() {
-  const randomNumber = genRanDom();
-  paintImage(randomNumber);
+
+  randomImage(randomNumber());
 }
 
 init();
