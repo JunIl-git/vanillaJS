@@ -1,6 +1,6 @@
 # vanillaJS
 
-<a href="https://junil-git.github.io/vanillaJS/#/">작품 보기</a>
+<a href="https://junil-git.github.io/vanillaJS_momentum/#/">작품 보기</a>
 
 ## skill
 
